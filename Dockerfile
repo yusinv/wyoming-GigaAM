@@ -33,7 +33,7 @@ RUN \
 
 WORKDIR /
 
-ENTRYPOINT wyoming-gigaAM --model ${MODEL} --uri tcp://0.0.0.0:10300 --data-dir /data
+ENTRYPOINT exec wyoming-gigaAM --model ${MODEL} --uri tcp://0.0.0.0:10300 --data-dir /data
 
 HEALTHCHECK --start-period=10m \
     CMD echo '{ "type": "describe" }' \

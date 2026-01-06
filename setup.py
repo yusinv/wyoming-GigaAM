@@ -25,8 +25,8 @@ version = version_path.read_text(encoding="utf-8").strip()
 setup(
     name=module_name,
     version=version,
-    description="Wyoming Server for gigaAM RNNT",
-    url="http://github.com/yusinv/wyoming-GigaAM-RNNT",
+    description="Wyoming Server for gigaAM",
+    url="https://github.com/yusinv/wyoming-GigaAM",
     author="Valentin Yusin",
     author_email="yusinv@gmail.com",
     license="MIT",
@@ -39,7 +39,9 @@ setup(
         "Topic :: Text Processing :: Linguistic",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
-    keywords="wyoming gigaAM-RNNT stt",
+    keywords="wyoming gigaAM stt",
     entry_points={"console_scripts": ["wyoming-gigaAM = wyoming_gigaam.__main__:run"]},
 )

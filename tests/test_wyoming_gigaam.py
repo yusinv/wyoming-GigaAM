@@ -37,12 +37,12 @@ async def test_gigaAM() -> None:
     assert proc.stdout is not None
 
     # wait for model to be loaded
-    await asyncio.sleep(20)
+    # await asyncio.sleep(20)
 
     # Check info
     await async_write_event(Describe().event(), proc.stdin)
     while True:
-        event = await asyncio.wait_for(async_read_event(proc.stdout), timeout=1)
+        event = await asyncio.wait_for(async_read_event(proc.stdout), timeout=1000)
         assert event is not None
 
         if not Info.is_type(event.type):

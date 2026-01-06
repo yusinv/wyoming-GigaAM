@@ -1,3 +1,3 @@
-wyoming==1.6.0
+wyoming==1.8.0
 requests
-gigaam @ git+https://github.com/salute-developers/GigaAM@42436bfb68ae62061bd19cdefe7e062329ca3b84
+gigaam @ git+https://github.com/salute-developers/GigaAM@8e788800237b6ddaf94763cf70b0b154e35fb834
